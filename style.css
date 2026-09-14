@@ -43,6 +43,8 @@
 
 header{
     background-color: #3b141c;
+    position: fixed;
+    width: 100%;
 }
 
 ul{
@@ -51,7 +53,8 @@ ul{
     gap: 50px
 }
 
-.section-content {
+
+.nav-content {
     max-width: var(--site-max-width);
     margin: 0 auto;
     padding: 0 30px;
@@ -81,6 +84,7 @@ ul{
 }
 
 .hero-section{
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,16 +100,17 @@ ul{
 }
 
 .section-header{
-    font-family: "Miniver";
-    color: var(--secondary-color)
+    font-family: "Miniver", sans-serif;
+    color: var(--secondary-color);
+    font-size: var(--font-size-xxl)
 }
 
-
 button{
-    padding: 15px 25px;
+    padding: 15px 20px;
     margin-right: 20px;
     margin-bottom: 10px;
     font-size: var(--font-size-m);
+    font-weight: var(--font-weight-semibold);
     cursor: pointer
 }
 
@@ -120,7 +125,7 @@ button{
 #order-btn:hover, #contact-btn{
     border: 2px solid white;
     border-radius: 30px;
-    background-color: var(--primary-color);
+    background: transparent;
     color: var(--light-pink-color);
     transition: 0.2s ease-in;
 }
@@ -131,6 +136,13 @@ button{
     text-align: center;    
 }
 
+@media screen and (max-width: 900px){
+    .nav-bar{
+        display: block;
+        top: 0;
+        left: 0;
+        width: 30%;
+        background-color: var(--white-color);
 
-
-
+    }
+}
