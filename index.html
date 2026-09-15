@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Coffee Shop</title>
 </head>
@@ -12,7 +13,13 @@
             <a href="#" class="nav-logo">
                 <h1>☕ Coffee</h1>
             </a>
+            <button id="menu-open-btn" 
+                    class="fas fa-bars"
+                    onclick="openNavMenu()"></button>
             <ul class="nav-menu">
+                <button id="menu-close-btn"
+                        class="fas fa-times"
+                        onclick="closeNavMenu()"></button>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
@@ -64,9 +71,7 @@
 
     <section id="about" 
             class="about-us">
-        <div class="about-img">
 
-        </div>
         <div class="about-content">
         <h1>ABOUT US</h1>
         <p>
