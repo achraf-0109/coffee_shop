@@ -53,6 +53,19 @@ ul{
     gap: 50px
 }
 
+button{
+    padding: 15px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer
+}
+
+a{
+    text-decoration: none;
+}
+
 #menu-close-btn{
     visibility: hidden;
     border: none;
@@ -72,7 +85,6 @@ ul{
     color: var(--white-color);
 }
 
-
 .nav-content {
     max-width: var(--site-max-width);
     margin: 0 auto;
@@ -88,7 +100,6 @@ ul{
 
 .nav-logo, .nav-link{
     color: var(--white-color);
-    text-decoration: none;
     font-weight: var(--font-weight-normal);
 }
 
@@ -105,10 +116,11 @@ ul{
 /* Hero Section */
 
 .hero-section{
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px;
     padding: 30px 100px;
     background-color: var(--primary-color);
     color: var(--white-color)
@@ -124,15 +136,6 @@ ul{
     font-family: "Miniver", sans-serif;
     color: var(--secondary-color);
     font-size: var(--font-size-xxl)
-}
-
-button{
-    padding: 15px 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    font-size: var(--font-size-m);
-    font-weight: var(--font-weight-semibold);
-    cursor: pointer
 }
 
 #contact-btn:hover, #order-btn{
@@ -151,10 +154,45 @@ button{
     transition: 0.2s ease-in;
 }
 
+.about-section{
+    min-height: 80vh;
+    padding-top: 30px;
+    padding: 0 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+.about-img{
+    width: 300px ;
+    height: 300px;
+    border-radius: 100%;
+    background-image: url("images/about-image.jpg");
+}
+
 .about-content{
     display: flex;
-    gap: 15px;
-    text-align: center;    
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-header{
+    text-decoration: underline;
+    text-decoration-color: #ffba1a;
+}
+
+.contact-icons{
+    display: flex;
+    gap: 30px;
+}
+
+.menu-content{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;    
 }
 
 @media screen and (max-width: 920px){
@@ -180,7 +218,7 @@ button{
     }
 
     #menu-close-btn{
-        visibility:visible;
+        visibility: visible;
     }
 
     #menu-open-btn{
