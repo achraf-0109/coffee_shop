@@ -39,8 +39,7 @@
   --site-max-width: 1300px;
 }
 
-/* Nav Bar */
-
+/* Important Elements*/
 header{
     background-color: #3b141c;
     position: fixed;
@@ -85,6 +84,7 @@ a{
     color: var(--white-color);
 }
 
+/* Nav Bar */
 .nav-content {
     max-width: var(--site-max-width);
     margin: 0 auto;
@@ -114,9 +114,8 @@ a{
 }
 
 /* Hero Section */
-
 .hero-section{
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -182,19 +181,67 @@ a{
 .about-header{
     text-decoration: underline;
     text-decoration-color: #ffba1a;
+    line-height: 30px;
+}
+
+.about-text{
+    font-size: 1.25rem;
+    line-height: 2rem;
 }
 
 .contact-icons{
     display: flex;
-    gap: 30px;
+    gap: 50px;
+}
+
+
+.social-icon{
+    font-size: 2rem;
+}
+
+.menu-section{
+    height: 200vh;
+    display: flex;
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    overflow: hidden;
 }
 
 .menu-content{
-    height: 90vh;
+    padding: 50px;
     display: flex;
-    justify-content: space-around;    
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
 
+.menu-header{
+    text-decoration: underline;
+    text-decoration-color: #ffba1a;
+}
+
+.menu-items{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 150px; */
+    flex-wrap: wrap;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-item p{
+    font-size: 1.25rem;
+}
+
+/* Responsiveness */
 @media screen and (max-width: 920px){
     .nav-menu{
         display: block;
