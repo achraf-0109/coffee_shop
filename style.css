@@ -202,7 +202,7 @@ a{
 }
 
 #menu{
-    height: 200vh;
+    height: 150vh;
     color: var(--white-color);
     background-color: var(--dark-color);
     overflow: hidden;
@@ -291,16 +291,6 @@ a{
     justify-content: center;
     align-items: center;
     
-}
-
-@keyframes slide {
-    from {
-        translate: 0%
-    }
-    to {
-        translate: 33%;
-    }
-
 }
 
 /* Responsiveness */

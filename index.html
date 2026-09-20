@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Coffee Shop</title>
 </head>
@@ -100,6 +101,12 @@
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
             </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
         </div> 
     </section>
 
@@ -192,11 +199,11 @@
                 TESTIMONIALS
             </h1>
 
-            <div class="slider">
-                <button id="back"><-</button>
+            <div class="slider swiper">
+                <!-- <button id="back"><-</button> -->
                 <div class="testimonials-group">
-                <ul class="testimonials-items">
-                    <li class="testimonials-item">
+                <ul class="testimonials-items swiper-wrapper">
+                    <li class="testimonials-item swiper-slide">
                         <img src="images/user-1.jpg" alt="" class="testimonials-img">
                         <h3>Sarah Johnson</h3>
                         <i>
@@ -204,7 +211,7 @@
                             balanced and rich. Will order again"                    
                         </i>
                     </li>
-                    <li class="testimonials-item">
+                    <li class="testimonials-item swiper-slide">
                         <img src="images/user-2.jpg" alt="" class="testimonials-img">
                         <h3>James Wilson</h3>
                         <i>
@@ -212,7 +219,7 @@
                             bold flavor. Fast shipping too!"                    
                         </i>    
                     </li>
-                    <li class="testimonials-item">
+                    <li class="testimonials-item swiper-slide">
                         <img src="images/user-3.jpg" alt="" class="testimonials-img">
                         <h3>Micheal Brown</h3>
                         <i>
@@ -220,7 +227,7 @@
                             aromatic. Quick shipping!"                    
                         </i>    
                     </li>
-                    <li class="testimonials-item">
+                    <li class="testimonials-item swiper-slide">
                         <img src="images/user-4.jpg" alt="" class="testimonials-img">
                         <h3>Emily Harris</h3>
                         <i>
@@ -228,7 +235,7 @@
                             quick delivery. Highly recommend."                    
                         </i>   
                     </li>
-                    <li class="testimonials-item">
+                    <li class="testimonials-item swiper-slide">
                         <img src="images/user-5.jpg" alt="" class="testimonials-img">
                         <h3>Anthopy Thompson</h3>
                         <i>
@@ -237,12 +244,23 @@
                         </i>  
                     </li>
                 </ul>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+           
             </div>
-            <button id="go">-></button>
+            <!-- <button id="go">-></button> -->
             </div>
         </div>
     </section>
 
+    <section id="gallery">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
