@@ -299,6 +299,30 @@ a{
     text-align: center;
 }
 
+.gallery-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.gallery-header{
+    border-bottom: solid #ffba1a 5px; 
+}
+
+.gallery-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item{
+    width: 30rem;
+    border: solid #ffba1a 10px;
+}
+
 /* Responsiveness */
 @media screen and (max-width: 1200px){
     .nav-menu{
