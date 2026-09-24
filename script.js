@@ -11,9 +11,7 @@ const closeNavMenu= () => {
     navMenu.style.left = "-300px";
 }
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
+const swiper = new Swiper('.slider', {
   loop: true,
 
   // If we need pagination
@@ -27,5 +25,3 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   }
 });
-
-
