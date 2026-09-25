@@ -48,14 +48,14 @@
     <section id="hero"
             class="hero-section">
         <div class="hero-content">
-            <h1 class="section-header">Best Coffee</p>
+            <h1 class="hero-header">Best Coffee</p>
             <h1 class="cta">
                 Make your day great with our <br>
                 special coffee!
             </h1>
             <p>
                 Welcome to our coffee paradise,
-                where every bean tells <br> a story
+                where every bean tells a story
                 and every cup sparks joy
             </p>
             <div class="buttons">
@@ -69,8 +69,7 @@
         </div>
         <img src="images/coffee-hero-section.png" 
                 alt="Coffee"
-                width="450"
-                height="450" />
+                class="hero-img" />
     </section>
 
     <!-- About Section -->
@@ -272,34 +271,34 @@
                 Gallery
             </h1>
             <ul class="gallery-items">
-                <li>
+                <li class="gallery-item-wrapper">
                     <img src="images/gallery-1.jpg"     
                         alt="image 1"
                         class="gallery-item">
                 </li>
-                <li>
+                <li class="gallery-item-wrapper">
                     <img src="images/gallery-2.jpg" 
                         alt="image 2"
                         class="gallery-item">
                 </li>
-                <li>
+                <li class="gallery-item-wrapper">
                     <img src="images/gallery-3.jpg" 
                         alt="image 3"
                         class="gallery-item">
                 </li>
 
-                <li>
+                <li class="gallery-item-wrapper">
                     <img src="images/gallery-4.jpg" 
                         alt="image 4"
                         class="gallery-item">
                 </li>
 
-                <li>
+                <li class="gallery-item-wrapper">
                     <img src="images/gallery-5.jpg" 
                         alt="image 5"
                         class="gallery-item">
                 </li>
-                <li>
+                <li class="gallery-item-wrapper">
                     <img src="images/gallery-6.jpg" 
                         alt="image 6"
                         class="gallery-item">
@@ -308,7 +307,129 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <section id="contact">
+        <div class="contact-content">
+            <h1 class="contact-header">
+                CONTACT US
+            </h1>
+
+            <div class="contact-items-container">
+                <ul class="contact-items">
+                    <li class="contact-item">
+                            <p> 
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>  123 Campsite Avenue, Wilderness, CA 98765</span>
+                            </p>
+                    </li>
+                    <li class="contact-item">
+                        
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@coffeeshopwebsite.com</span>
+                        </p>
+                    </li>
+                    <li class="contact-item">
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>(123) 456-78909</span>
+                        </p>
+                        
+                    </li>
+                    <li class="contact-item">
+                        <p>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Monday - Friday: 9:00 AM - 5:00 PM</span>
+                        </p>
+                    </li>
+                    <li class="contact-item">
+                        <p>
+                            <i class="fa-solid fa-clock"></i>  
+                            <span>Saturday: 10:00 AM - 3:00 AM</span>
+                        </p>
+                         
+                    </li>
+                    <li class="contact-item">
+                        <p>
+                            <i class="fa-solid fa-clock"></i> 
+                            <span>Sunday: Closed</span>
+                        </p>
+                            
+                    </li>
+                    <li class="contact-item">
+                        <p>
+                           <i class="fa-solid fa-globe"></i> 
+                           <span>www.codingnepalweb.com </span>
+                        </p>
+                    </li>
+                </ul>
+
+                <ul class="contact-items">
+                    <li>
+                        <input type="text" 
+                            name="name" 
+                            placeholder="Name"
+                            id="name"
+                            class="input-item">
+                    </li>
+                    <li>
+                        <input type="email" 
+                            name="email" 
+                            placeholder="Email"
+                            id="email"
+                            class="input-item">
+                    </li>
+                    <li>
+                        <input type="text" 
+                            name="subject" 
+                            placeholder="Subject"
+                            id="subject"
+                            class="input-item">
+                    </li>
+                    <li>
+                        <textarea name="text"
+                                placeholder="Message"
+                                id="message"
+                                class="input-item"></textarea>
+                    </li>
+                    <li>
+                        <button class="contact-btn"
+                                onclick="sendMail()">
+                                Submit
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer-content">
+            <p>© 2024 Coffee Shop</p>
+            <div class="contact-icons-footer">
+                <a href="#" class="social-icon-footer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon-footer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="social-icon-footer">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            <p>Privacy policy . Refund policy </p>
+        </div>
+    </section>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "K9bnFespWXi5n3IZy",
+            });
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -25,3 +25,14 @@ const swiper = new Swiper('.slider', {
     prevEl: '.swiper-button-prev',
   }
 });
+
+const sendMail = () => {
+  let parms = {
+          name : document.getElementById("name").value,
+          email : document.getElementById("email").value,
+          subject : document.getElementById("subject").value,
+          message : document.getElementById("message").value,
+      }
+      console.log(message);
+      emailjs.send("service_g5o2tut","template_62947pd",parms) 
+}
