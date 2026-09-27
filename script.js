@@ -21,3 +21,15 @@ const sendMail = () => {
       console.log(message);
       emailjs.send("service_g5o2tut","template_62947pd",parms) 
 }
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});

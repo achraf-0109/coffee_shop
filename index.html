@@ -76,9 +76,12 @@
     <section id="about" 
             class="about-section">
 
-        <img src="images/about-image.jpg" 
+        <div class="about-img-wrapper">
+            <img src="images/about-image.jpg" 
             alt="About Img"
             class="about-img">
+        </div>
+        
 
         <div class="about-content">
             <h1 class="about-header">ABOUT US</h1>
@@ -206,11 +209,20 @@
             <h1 class="testimonials-header">
                 TESTIMONIALS
             </h1>
-            <div class="testimonials-group swiper">
+            <div class="testimonials-group">
                 <ul class="testimonials-items">
                     <li class="testimonials-item">
-                        <img src="images/user-1.jpg" alt="" class="testimonials-img">
+                        <img src="images/user-1.jpg" 
+                            alt="" 
+                            class="testimonials-img">
                         <h3>Sarah Johnson</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
                         <div class="testimonial-text">
                             <i>
                             "Loved the french roast.Perfectly
@@ -219,20 +231,35 @@
                         </div>
                         
                     </li>
-                    <li class="testimonials-item">
+                    <li class="testimonials-item swiper-slide">
                         <img src="images/user-2.jpg" alt="" class="testimonials-img">
                         <h3>James Wilson</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
                         <div class="testimonial-text">
                             <i>
                             "Great espresso blend! smooth and
                             bold flavor. Fast shipping too!"                    
                             </i>  
                         </div>
-                            
                     </li>
-                    <li class="testimonials-item">
-                        <img src="images/user-3.jpg" alt="" class="testimonials-img">
+                    <li class="testimonials-item swiper-slide"
+                        style="margin-bottom: 20px;">
+                        <img src="images/user-3.jpg" 
+                            alt="" 
+                            class="testimonials-img">
                         <h3>Micheal Brown</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
                         <div class="testimonial-text">
                             <i>
                             "Fantastic mocha flavor. Fresh and 
@@ -241,9 +268,15 @@
                         </div>
                             
                     </li>
-                    <li class="testimonials-item">
+                    <li class="testimonials-item swiper-slide">
                         <img src="images/user-4.jpg" alt="" class="testimonials-img">
                         <h3>Emily Harris</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
                         <div class="testimonial-text">
                             <i>
                             "Excellent quality! Fresh beans and
@@ -252,9 +285,20 @@
                         </div>
                         
                     </li>
-                    <li class="testimonials-item">
-                        <img src="images/user-5.jpg" alt="" class="testimonials-img">
+                    <li class="testimonials-item swiper-slide"
+                        style="margin-bottom: 25px;
+                            margin-right: 50px">
+                        <img src="images/user-5.jpg" 
+                            alt="" 
+                            class="testimonials-img">
                         <h3>Anthopy Thompson</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
                         <div class="testimonial-text">
                             <i>
                             "Best ones I've tried! Smooth
@@ -262,9 +306,106 @@
                             </i>  
                         </div>
                     </li>
-                </ul> 
+                </ul>
+
+                <ul class="testimonials-items">
+                    <li class="testimonials-item swiper-slide">
+                        <img src="images/user-1.jpg" alt="" class="testimonials-img">
+                        <h3>Sarah Johnson</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <i>
+                            "Loved the french roast.Perfectly
+                            balanced and rich. Will order again"                    
+                            </i>
+                        </div>
+                    </li>
+                    <li class="testimonials-item swiper-slide">
+                        <img src="images/user-2.jpg" alt="" class="testimonials-img">
+                        <h3>James Wilson</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <i>
+                            "Great espresso blend! smooth and
+                            bold flavor. Fast shipping too!"                    
+                            </i>  
+                        </div>
+                    </li>
+                    <li class="testimonials-item swiper-slide"
+                        style="margin-bottom: 20px;">
+                        <img src="images/user-3.jpg" alt="" class="testimonials-img">
+                        <h3>Micheal Brown</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <i>
+                            "Fantastic mocha flavor. Fresh and 
+                            aromatic. Quick shipping!"                    
+                            </i>   
+                        </div>
+                            
+                    </li>
+                    <li class="testimonials-item swiper-slide">
+                        <img src="images/user-4.jpg" alt="" class="testimonials-img">
+                        <h3>Emily Harris</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <i>
+                            "Excellent quality! Fresh beans and
+                            quick delivery. Highly recommend."                    
+                            </i>   
+                        </div>
+                        
+                    </li>
+                    <li class="testimonials-item swiper-slide"
+                        style="margin-bottom: 25px;
+                            margin-right: 50px">
+                        <img src="images/user-5.jpg" alt="" class="testimonials-img">
+                        <h3>Anthopy Thompson</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                        <div class="testimonial-text">
+                            <i>
+                            "Best ones I've tried! Smooth
+                            and flavorful. Arrived promptly."                    
+                            </i>  
+                        </div>
+                    </li>
+                </ul>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 
-                </div>
+            </div>
         </div>
     </section>
 
